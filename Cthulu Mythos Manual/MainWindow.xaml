@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cthulu_Mythos_Manual"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Cthulu Mythos Manual" Height="350" Width="525">
     <Grid>
-        
+        <TabControl x:Name="tabControl" HorizontalAlignment="Right" Height="319" VerticalAlignment="Top" Width="517" BorderThickness="0,1,0,0">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

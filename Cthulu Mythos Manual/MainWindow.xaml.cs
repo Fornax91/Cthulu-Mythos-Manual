@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Cthulu_Mythos_Manual
 {
@@ -22,7 +23,17 @@ namespace Cthulu_Mythos_Manual
     {
         public MainWindow()
         {
+            Thread t = new Thread(new ThreadStart(SplashScreen));
+            t.Start();
+            Thread.Sleep(5000);
+
+        
             InitializeComponent();
+        }
+
+        public void SplashScreen()
+        {
+            Application.Run(SplashScreen);
         }
     }
 }

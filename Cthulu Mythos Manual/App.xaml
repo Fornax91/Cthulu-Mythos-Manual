@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:Cthulu_Mythos_Manual"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="Columbus">
+            <Setter Property="TextElement.FontFamily" Value="/Cthulu Mythos Manual;component/assets/#Columbus (Plain)" />
+        </Style>
     </Application.Resources>
 </Application>
